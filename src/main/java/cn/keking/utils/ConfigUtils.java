@@ -17,6 +17,7 @@ public class ConfigUtils {
 
     private static final String MAIN_DIRECTORY_NAME = "server";
     private static final Logger logger = LoggerFactory.getLogger(ConfigUtils.class);
+
     public static String getHomePath() {
         String userDir = System.getenv("KKFILEVIEW_BIN_FOLDER");
         if (userDir == null) {
@@ -27,7 +28,8 @@ public class ConfigUtils {
             userDir = userDir.substring(0, userDir.length() - 4);
         } else {
             String separator = File.separator;
-            userDir = userDir + separator + "src" + separator +  "main";
+            //userDir = userDir + separator + "src" + separator +  "main";//本地运行
+            userDir = userDir + separator + "main";//zeabur 服务器
           /*  if (userDir.endsWith(MAIN_DIRECTORY_NAME)) {
                 userDir = userDir + separator + "src" + separator +  "main";
             } else {
@@ -72,8 +74,8 @@ public class ConfigUtils {
                     pluginPath.getParentFile());
             /*return firstExists(new File(pluginPath, MAIN_DIRECTORY_NAME),
                     new File(pluginPath.getParentFile(), MAIN_DIRECTORY_NAME));*/
-            }
         }
+    }
 
     public static String getCustomizedConfigPath() {
         String homePath = getHomePath();
