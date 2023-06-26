@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.jodconverter:jodconverter-local:4.4.6">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../repobme/org/jodconverter/jodconverter-local/4.4.6/jodconverter-local-4.4.6.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../repobme/org/jodconverter/jodconverter-local/4.4.6/jodconverter-local-4.4.6-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../repobme/org/jodconverter/jodconverter-local/4.4.6/jodconverter-local-4.4.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
