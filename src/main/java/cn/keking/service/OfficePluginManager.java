@@ -49,6 +49,7 @@ public class OfficePluginManager {
     @PostConstruct
     public void startOfficeManager() throws OfficeException {
         File officeHome = LocalOfficeUtils.getDefaultOfficeHome();
+        logger.info("路径startOfficeManager：{}",officeHome.getAbsolutePath());
         if (officeHome == null) {
             throw new RuntimeException("找不到office组件，请确认'office.home'配置是否有误");
         }
