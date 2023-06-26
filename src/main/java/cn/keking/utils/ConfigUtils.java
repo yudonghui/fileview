@@ -1,6 +1,10 @@
 package cn.keking.utils;
 
 
+import cn.keking.web.controller.OnlinePreviewController;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.File;
 import java.util.Iterator;
 import java.util.Map;
@@ -12,12 +16,13 @@ import java.util.Properties;
 public class ConfigUtils {
 
     private static final String MAIN_DIRECTORY_NAME = "server";
-
+    private static final Logger logger = LoggerFactory.getLogger(ConfigUtils.class);
     public static String getHomePath() {
         String userDir = System.getenv("KKFILEVIEW_BIN_FOLDER");
         if (userDir == null) {
             userDir = System.getProperty("user.dir");
         }
+        logger.info("路径userDir：{}", userDir, userDir);
         if (userDir.endsWith("bin")) {
             userDir = userDir.substring(0, userDir.length() - 4);
         } else {
