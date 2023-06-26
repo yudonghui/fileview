@@ -1,6 +1,7 @@
 package cn.keking.utils;
 
 import org.jodconverter.core.util.OSUtils;
+import org.springframework.core.io.ClassPathResource;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -37,7 +38,7 @@ public class LocalOfficeUtils {
             return new File(officeHome);
         }
         if (OSUtils.IS_OS_WINDOWS) {
-            String userDir = ConfigUtils.getUserDir();
+            String userDir = ConfigUtils.getResourcePath();
             // Try to find the most recent version of LibreOffice or OpenOffice,
             // starting with the 64-bit version. %ProgramFiles(x86)% on 64-bit
             // machines; %ProgramFiles% on 32-bit ones

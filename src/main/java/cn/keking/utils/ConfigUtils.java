@@ -83,7 +83,11 @@ public class ConfigUtils {
         String separator = java.io.File.separator;
         return homePath + separator + "config" + separator + "application.properties";
     }
-
+    public static String getResourcePath() {
+        String homePath = getHomePath();
+        String separator = java.io.File.separator;
+        return homePath + separator + "resources";
+    }
     public synchronized static void restorePropertiesFromEnvFormat(Properties properties) {
         Iterator<Map.Entry<Object, Object>> iterator = properties.entrySet().iterator();
         while (iterator.hasNext()) {

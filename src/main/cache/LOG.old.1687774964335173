@@ -1,0 +1,195 @@
+2023/06/26-15:39:40.200407 2d28 RocksDB version: 5.17.2
+2023/06/26-15:39:40.200457 2d28 Git sha rocksdb_build_git_sha:@f438b98e552010613cff8684a7d84191ed785148@
+2023/06/26-15:39:40.200477 2d28 Compile date Nov 27 2018
+2023/06/26-15:39:40.200496 2d28 DB SUMMARY
+2023/06/26-15:39:40.200706 2d28 CURRENT file:  CURRENT
+2023/06/26-15:39:40.200731 2d28 IDENTITY file:  IDENTITY
+2023/06/26-15:39:40.200787 2d28 MANIFEST file:  MANIFEST-000020 size: 141 Bytes
+2023/06/26-15:39:40.200808 2d28 SST files in D:\java\kkfileview\src\main\cache dir, Total Num: 1, files: 000004.sst 
+2023/06/26-15:39:40.200823 2d28 Write Ahead Log file in D:\java\kkfileview\src\main\cache: 000021.log size: 0 ; 
+2023/06/26-15:39:40.200843 2d28                         Options.error_if_exists: 0
+2023/06/26-15:39:40.200938 2d28                       Options.create_if_missing: 1
+2023/06/26-15:39:40.200948 2d28                         Options.paranoid_checks: 1
+2023/06/26-15:39:40.200954 2d28                                     Options.env: 000001AAFEC849F0
+2023/06/26-15:39:40.200959 2d28                                Options.info_log: 000001AA80D1FAA0
+2023/06/26-15:39:40.200965 2d28                Options.max_file_opening_threads: 16
+2023/06/26-15:39:40.200970 2d28                              Options.statistics: 0000000000000000
+2023/06/26-15:39:40.200975 2d28                               Options.use_fsync: 0
+2023/06/26-15:39:40.200980 2d28                       Options.max_log_file_size: 0
+2023/06/26-15:39:40.200985 2d28                  Options.max_manifest_file_size: 1073741824
+2023/06/26-15:39:40.200991 2d28                   Options.log_file_time_to_roll: 0
+2023/06/26-15:39:40.200996 2d28                       Options.keep_log_file_num: 1000
+2023/06/26-15:39:40.201001 2d28                    Options.recycle_log_file_num: 0
+2023/06/26-15:39:40.201006 2d28                         Options.allow_fallocate: 1
+2023/06/26-15:39:40.201011 2d28                        Options.allow_mmap_reads: 0
+2023/06/26-15:39:40.201016 2d28                       Options.allow_mmap_writes: 0
+2023/06/26-15:39:40.201021 2d28                        Options.use_direct_reads: 0
+2023/06/26-15:39:40.201026 2d28                        Options.use_direct_io_for_flush_and_compaction: 0
+2023/06/26-15:39:40.201038 2d28          Options.create_missing_column_families: 0
+2023/06/26-15:39:40.201044 2d28                              Options.db_log_dir: 
+2023/06/26-15:39:40.201049 2d28                                 Options.wal_dir: D:\java\kkfileview\src\main\cache
+2023/06/26-15:39:40.201054 2d28                Options.table_cache_numshardbits: 6
+2023/06/26-15:39:40.201059 2d28                      Options.max_subcompactions: 1
+2023/06/26-15:39:40.201064 2d28                  Options.max_background_flushes: -1
+2023/06/26-15:39:40.201069 2d28                         Options.WAL_ttl_seconds: 0
+2023/06/26-15:39:40.201074 2d28                       Options.WAL_size_limit_MB: 0
+2023/06/26-15:39:40.201079 2d28             Options.manifest_preallocation_size: 4194304
+2023/06/26-15:39:40.201084 2d28                     Options.is_fd_close_on_exec: 1
+2023/06/26-15:39:40.201090 2d28                   Options.advise_random_on_open: 1
+2023/06/26-15:39:40.201095 2d28                    Options.db_write_buffer_size: 0
+2023/06/26-15:39:40.201100 2d28                    Options.write_buffer_manager: 000001AA80D2C3B0
+2023/06/26-15:39:40.201105 2d28         Options.access_hint_on_compaction_start: 1
+2023/06/26-15:39:40.201110 2d28  Options.new_table_reader_for_compaction_inputs: 0
+2023/06/26-15:39:40.201115 2d28           Options.random_access_max_buffer_size: 1048576
+2023/06/26-15:39:40.201120 2d28                      Options.use_adaptive_mutex: 0
+2023/06/26-15:39:40.201125 2d28                            Options.rate_limiter: 0000000000000000
+2023/06/26-15:39:40.201130 2d28     Options.sst_file_manager.rate_bytes_per_sec: 0
+2023/06/26-15:39:40.201136 2d28                       Options.wal_recovery_mode: 2
+2023/06/26-15:39:40.201141 2d28                  Options.enable_thread_tracking: 0
+2023/06/26-15:39:40.201146 2d28                  Options.enable_pipelined_write: 0
+2023/06/26-15:39:40.201176 2d28         Options.allow_concurrent_memtable_write: 1
+2023/06/26-15:39:40.201184 2d28      Options.enable_write_thread_adaptive_yield: 1
+2023/06/26-15:39:40.201189 2d28             Options.write_thread_max_yield_usec: 100
+2023/06/26-15:39:40.201194 2d28            Options.write_thread_slow_yield_usec: 3
+2023/06/26-15:39:40.201200 2d28                               Options.row_cache: None
+2023/06/26-15:39:40.201205 2d28                              Options.wal_filter: None
+2023/06/26-15:39:40.201210 2d28             Options.avoid_flush_during_recovery: 0
+2023/06/26-15:39:40.201215 2d28             Options.allow_ingest_behind: 0
+2023/06/26-15:39:40.201220 2d28             Options.preserve_deletes: 0
+2023/06/26-15:39:40.201225 2d28             Options.two_write_queues: 0
+2023/06/26-15:39:40.201230 2d28             Options.manual_wal_flush: 0
+2023/06/26-15:39:40.201235 2d28             Options.max_background_jobs: 2
+2023/06/26-15:39:40.201240 2d28             Options.max_background_compactions: -1
+2023/06/26-15:39:40.201246 2d28             Options.avoid_flush_during_shutdown: 0
+2023/06/26-15:39:40.201251 2d28           Options.writable_file_max_buffer_size: 1048576
+2023/06/26-15:39:40.201256 2d28             Options.delayed_write_rate : 16777216
+2023/06/26-15:39:40.201261 2d28             Options.max_total_wal_size: 0
+2023/06/26-15:39:40.201266 2d28             Options.delete_obsolete_files_period_micros: 21600000000
+2023/06/26-15:39:40.201271 2d28                   Options.stats_dump_period_sec: 600
+2023/06/26-15:39:40.201277 2d28                          Options.max_open_files: -1
+2023/06/26-15:39:40.201282 2d28                          Options.bytes_per_sync: 0
+2023/06/26-15:39:40.201287 2d28                      Options.wal_bytes_per_sync: 0
+2023/06/26-15:39:40.201292 2d28       Options.compaction_readahead_size: 0
+2023/06/26-15:39:40.201297 2d28 Compression algorithms supported:
+2023/06/26-15:39:40.201307 2d28 	kZSTD supported: 0
+2023/06/26-15:39:40.201312 2d28 	kSnappyCompression supported: 0
+2023/06/26-15:39:40.201318 2d28 	kBZip2Compression supported: 0
+2023/06/26-15:39:40.201323 2d28 	kZlibCompression supported: 0
+2023/06/26-15:39:40.201328 2d28 	kLZ4Compression supported: 0
+2023/06/26-15:39:40.201333 2d28 	kXpressCompression supported: 0
+2023/06/26-15:39:40.201338 2d28 	kLZ4HCCompression supported: 0
+2023/06/26-15:39:40.201343 2d28 	kZSTDNotFinalCompression supported: 0
+2023/06/26-15:39:40.201353 2d28 Fast CRC32 supported: Supported on x86
+2023/06/26-15:39:40.201986 2d28 [c:\users\aretter\code\rocksdb\db\version_set.cc:3406] Recovering from manifest file: MANIFEST-000020
+2023/06/26-15:39:40.202113 2d28 [c:\users\aretter\code\rocksdb\db\column_family.cc:475] --------------- Options for column family [default]:
+2023/06/26-15:39:40.202131 2d28               Options.comparator: leveldb.BytewiseComparator
+2023/06/26-15:39:40.202138 2d28           Options.merge_operator: None
+2023/06/26-15:39:40.202143 2d28        Options.compaction_filter: None
+2023/06/26-15:39:40.202148 2d28        Options.compaction_filter_factory: None
+2023/06/26-15:39:40.202154 2d28         Options.memtable_factory: SkipListFactory
+2023/06/26-15:39:40.202159 2d28            Options.table_factory: BlockBasedTable
+2023/06/26-15:39:40.202187 2d28            table_factory options:   flush_block_policy_factory: FlushBlockBySizePolicyFactory (000001AAFEDCC230)
+  cache_index_and_filter_blocks: 0
+  cache_index_and_filter_blocks_with_high_priority: 0
+  pin_l0_filter_and_index_blocks_in_cache: 0
+  pin_top_level_index_and_filter: 1
+  index_type: 0
+  hash_index_allow_collision: 1
+  checksum: 1
+  no_block_cache: 0
+  block_cache: 000001AAFEF42320
+  block_cache_name: LRUCache
+  block_cache_options:
+    capacity : 8388608
+    num_shard_bits : 4
+    strict_capacity_limit : 0
+    high_pri_pool_ratio: 0.000
+  block_cache_compressed: 0000000000000000
+  persistent_cache: 0000000000000000
+  block_size: 4096
+  block_size_deviation: 10
+  block_restart_interval: 16
+  index_block_restart_interval: 1
+  metadata_block_size: 4096
+  partition_filters: 0
+  use_delta_encoding: 1
+  filter_policy: nullptr
+  whole_key_filtering: 1
+  verify_compression: 0
+  read_amp_bytes_per_bit: 0
+  format_version: 2
+  enable_index_compression: 1
+  block_align: 0
+2023/06/26-15:39:40.202217 2d28        Options.write_buffer_size: 67108864
+2023/06/26-15:39:40.202226 2d28  Options.max_write_buffer_number: 2
+2023/06/26-15:39:40.202231 2d28          Options.compression: NoCompression
+2023/06/26-15:39:40.202237 2d28                  Options.bottommost_compression: Disabled
+2023/06/26-15:39:40.202242 2d28       Options.prefix_extractor: nullptr
+2023/06/26-15:39:40.202247 2d28   Options.memtable_insert_with_hint_prefix_extractor: nullptr
+2023/06/26-15:39:40.202252 2d28             Options.num_levels: 7
+2023/06/26-15:39:40.202257 2d28        Options.min_write_buffer_number_to_merge: 1
+2023/06/26-15:39:40.202262 2d28     Options.max_write_buffer_number_to_maintain: 0
+2023/06/26-15:39:40.202267 2d28            Options.bottommost_compression_opts.window_bits: -14
+2023/06/26-15:39:40.202273 2d28                  Options.bottommost_compression_opts.level: 32767
+2023/06/26-15:39:40.202278 2d28               Options.bottommost_compression_opts.strategy: 0
+2023/06/26-15:39:40.202283 2d28         Options.bottommost_compression_opts.max_dict_bytes: 0
+2023/06/26-15:39:40.202288 2d28         Options.bottommost_compression_opts.zstd_max_train_bytes: 0
+2023/06/26-15:39:40.202293 2d28                  Options.bottommost_compression_opts.enabled: false
+2023/06/26-15:39:40.202298 2d28            Options.compression_opts.window_bits: -14
+2023/06/26-15:39:40.202303 2d28                  Options.compression_opts.level: 32767
+2023/06/26-15:39:40.202309 2d28               Options.compression_opts.strategy: 0
+2023/06/26-15:39:40.202314 2d28         Options.compression_opts.max_dict_bytes: 0
+2023/06/26-15:39:40.202319 2d28         Options.compression_opts.zstd_max_train_bytes: 0
+2023/06/26-15:39:40.202324 2d28                  Options.compression_opts.enabled: false
+2023/06/26-15:39:40.202329 2d28      Options.level0_file_num_compaction_trigger: 4
+2023/06/26-15:39:40.202334 2d28          Options.level0_slowdown_writes_trigger: 20
+2023/06/26-15:39:40.202339 2d28              Options.level0_stop_writes_trigger: 36
+2023/06/26-15:39:40.202344 2d28                   Options.target_file_size_base: 67108864
+2023/06/26-15:39:40.202349 2d28             Options.target_file_size_multiplier: 1
+2023/06/26-15:39:40.202354 2d28                Options.max_bytes_for_level_base: 268435456
+2023/06/26-15:39:40.202360 2d28 Options.level_compaction_dynamic_level_bytes: 0
+2023/06/26-15:39:40.202365 2d28          Options.max_bytes_for_level_multiplier: 10.000000
+2023/06/26-15:39:40.202371 2d28 Options.max_bytes_for_level_multiplier_addtl[0]: 1
+2023/06/26-15:39:40.202377 2d28 Options.max_bytes_for_level_multiplier_addtl[1]: 1
+2023/06/26-15:39:40.202382 2d28 Options.max_bytes_for_level_multiplier_addtl[2]: 1
+2023/06/26-15:39:40.202387 2d28 Options.max_bytes_for_level_multiplier_addtl[3]: 1
+2023/06/26-15:39:40.202392 2d28 Options.max_bytes_for_level_multiplier_addtl[4]: 1
+2023/06/26-15:39:40.202397 2d28 Options.max_bytes_for_level_multiplier_addtl[5]: 1
+2023/06/26-15:39:40.202402 2d28 Options.max_bytes_for_level_multiplier_addtl[6]: 1
+2023/06/26-15:39:40.202407 2d28       Options.max_sequential_skip_in_iterations: 8
+2023/06/26-15:39:40.202412 2d28                    Options.max_compaction_bytes: 1677721600
+2023/06/26-15:39:40.202417 2d28                        Options.arena_block_size: 8388608
+2023/06/26-15:39:40.202422 2d28   Options.soft_pending_compaction_bytes_limit: 68719476736
+2023/06/26-15:39:40.202428 2d28   Options.hard_pending_compaction_bytes_limit: 274877906944
+2023/06/26-15:39:40.202433 2d28       Options.rate_limit_delay_max_milliseconds: 100
+2023/06/26-15:39:40.202438 2d28                Options.disable_auto_compactions: 0
+2023/06/26-15:39:40.202444 2d28                        Options.compaction_style: kCompactionStyleLevel
+2023/06/26-15:39:40.202449 2d28                          Options.compaction_pri: kByCompensatedSize
+2023/06/26-15:39:40.202456 2d28 Options.compaction_options_universal.size_ratio: 1
+2023/06/26-15:39:40.202462 2d28 Options.compaction_options_universal.min_merge_width: 2
+2023/06/26-15:39:40.202467 2d28 Options.compaction_options_universal.max_merge_width: 4294967295
+2023/06/26-15:39:40.202472 2d28 Options.compaction_options_universal.max_size_amplification_percent: 200
+2023/06/26-15:39:40.202478 2d28 Options.compaction_options_universal.compression_size_percent: -1
+2023/06/26-15:39:40.202484 2d28 Options.compaction_options_universal.stop_style: kCompactionStopStyleTotalSize
+2023/06/26-15:39:40.202489 2d28 Options.compaction_options_fifo.max_table_files_size: 1073741824
+2023/06/26-15:39:40.202494 2d28 Options.compaction_options_fifo.allow_compaction: 0
+2023/06/26-15:39:40.202499 2d28 Options.compaction_options_fifo.ttl: 0
+2023/06/26-15:39:40.202504 2d28                   Options.table_properties_collectors: 
+2023/06/26-15:39:40.202509 2d28                   Options.inplace_update_support: 0
+2023/06/26-15:39:40.202514 2d28                 Options.inplace_update_num_locks: 10000
+2023/06/26-15:39:40.202519 2d28               Options.memtable_prefix_bloom_size_ratio: 0.000000
+2023/06/26-15:39:40.202525 2d28   Options.memtable_huge_page_size: 0
+2023/06/26-15:39:40.202530 2d28                           Options.bloom_locality: 0
+2023/06/26-15:39:40.202535 2d28                    Options.max_successive_merges: 0
+2023/06/26-15:39:40.202540 2d28                Options.optimize_filters_for_hits: 0
+2023/06/26-15:39:40.202545 2d28                Options.paranoid_file_checks: 0
+2023/06/26-15:39:40.202550 2d28                Options.force_consistency_checks: 0
+2023/06/26-15:39:40.202556 2d28                Options.report_bg_io_stats: 0
+2023/06/26-15:39:40.202561 2d28                               Options.ttl: 0
+2023/06/26-15:39:40.203742 2d28 [c:\users\aretter\code\rocksdb\db\version_set.cc:3610] Recovered from manifest file:D:\java\kkfileview\src\main\cache/MANIFEST-000020 succeeded,manifest_file_number is 20, next_file_number is 22, last_sequence is 3, log_number is 0,prev_log_number is 0,max_column_family is 0,min_log_number_to_keep is 0
+2023/06/26-15:39:40.203761 2d28 [c:\users\aretter\code\rocksdb\db\version_set.cc:3618] Column family [default] (ID 0), log number is 19
+2023/06/26-15:39:40.204385 2d28 EVENT_LOG_v1 {"time_micros": 1687765180204066, "job": 1, "event": "recovery_started", "log_files": [21]}
+2023/06/26-15:39:40.204401 2d28 [c:\users\aretter\code\rocksdb\db\db_impl_open.cc:561] Recovering log #21 mode 2
+2023/06/26-15:39:40.204492 2d28 [c:\users\aretter\code\rocksdb\db\version_set.cc:2936] Creating manifest 23
+2023/06/26-15:39:40.207586 2d28 EVENT_LOG_v1 {"time_micros": 1687765180207581, "job": 1, "event": "recovery_finished"}
+2023/06/26-15:39:40.212105 2d28 [c:\users\aretter\code\rocksdb\db\db_impl_open.cc:1287] DB pointer 000001AA80D2A0B0
