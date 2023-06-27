@@ -35,7 +35,10 @@ public class LocalOfficeUtils {
             BufferedReader bufferedReader = new BufferedReader(new FileReader(customizedConfigPath));
             properties.load(bufferedReader);
             ConfigUtils.restorePropertiesFromEnvFormat(properties);
-        } catch (Exception ignored) {}
+            logger.info("路径getDefaultOfficeHome：{}",customizedConfigPath);
+        } catch (Exception ignored) {
+            logger.info("路径getDefaultOfficeHome catch：{}",ignored.toString());
+        }
         String officeHome = properties.getProperty(OFFICE_HOME_KEY);
         if (officeHome != null && !DEFAULT_OFFICE_HOME_VALUE.equals(officeHome)) {
             return new File(officeHome);
@@ -64,6 +67,7 @@ public class LocalOfficeUtils {
                     programFiles32 + File.separator + "LibreOffice 3",
                     programFiles32 + File.separator + "OpenOffice.org 3");
         } else if (OSUtils.IS_OS_MAC) {
+            logger.info("路径userDir-windows：{}","IS_OS_MAC");
             File homeDir = findOfficeHome(EXECUTABLE_MAC_41,
                             "/Applications/LibreOffice.app/Contents",
                             "/Applications/OpenOffice.app/Contents",
@@ -78,6 +82,7 @@ public class LocalOfficeUtils {
             return homeDir;
         } else {
             // Linux or other *nix variants
+            logger.info("路径userDir-windows：{}","Linux");
             return findOfficeHome(EXECUTABLE_DEFAULT,
                     "/opt/libreoffice6.0",
                     "/opt/libreoffice6.1",
