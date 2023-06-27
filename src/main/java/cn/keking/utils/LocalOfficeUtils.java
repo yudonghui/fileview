@@ -1,6 +1,8 @@
 package cn.keking.utils;
 
 import org.jodconverter.core.util.OSUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.core.io.ClassPathResource;
 
 import java.io.BufferedReader;
@@ -24,10 +26,11 @@ public class LocalOfficeUtils {
     private static final String EXECUTABLE_MAC = "program/soffice";
     private static final String EXECUTABLE_MAC_41 = "MacOS/soffice";
     private static final String EXECUTABLE_WINDOWS = "program/soffice.exe";
-
+    private static final Logger logger = LoggerFactory.getLogger(LocalOfficeUtils.class);
     public static File getDefaultOfficeHome() {
         Properties properties = new Properties();
         String customizedConfigPath = ConfigUtils.getCustomizedConfigPath();
+        logger.info("路径customizedConfigPath：{}",customizedConfigPath);
         try {
             BufferedReader bufferedReader = new BufferedReader(new FileReader(customizedConfigPath));
             properties.load(bufferedReader);
@@ -44,6 +47,7 @@ public class LocalOfficeUtils {
             // machines; %ProgramFiles% on 32-bit ones
             final String programFiles64 = System.getenv("ProgramFiles");
             final String programFiles32 = System.getenv("ProgramFiles(x86)");
+            logger.info("路径userDir-windows：{}",userDir);
             return findOfficeHome(EXECUTABLE_WINDOWS,
                     userDir + File.separator + "libreoffice",
                     programFiles32 + File.separator + "LibreOffice",
@@ -103,10 +107,11 @@ public class LocalOfficeUtils {
     }
 
     private static File findOfficeHome(final String executablePath, final String... homePaths) {
-        return Stream.of(homePaths)
+        File file = Stream.of(homePaths)
                 .filter(homePath -> Files.isRegularFile(Paths.get(homePath, executablePath)))
                 .findFirst()
                 .map(File::new)
                 .orElse(null);
+        return file;
     }
 }
