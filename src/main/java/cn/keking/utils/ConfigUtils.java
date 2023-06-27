@@ -85,6 +85,7 @@ public class ConfigUtils {
         String separator = java.io.File.separator;
         return homePath + separator + "config" + separator + "application.properties";
     }
+
     public static String getResourcePath() {
         String homePath = getHomePath();
         String separator = java.io.File.separator;

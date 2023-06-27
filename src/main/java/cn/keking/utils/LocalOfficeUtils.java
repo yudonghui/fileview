@@ -8,6 +8,7 @@ import org.springframework.core.io.ClassPathResource;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
+import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Properties;
@@ -32,8 +33,9 @@ public class LocalOfficeUtils {
         String customizedConfigPath = ConfigUtils.getCustomizedConfigPath();
         logger.info("路径customizedConfigPath：{}",customizedConfigPath);
         try {
-            BufferedReader bufferedReader = new BufferedReader(new FileReader(customizedConfigPath));
-            properties.load(bufferedReader);
+            properties.load(Thread.currentThread().getContextClassLoader().getResourceAsStream("application.properties"));
+          /* BufferedReader bufferedReader = new BufferedReader(new FileReader(customizedConfigPath));
+            properties.load(bufferedReader);*/
             ConfigUtils.restorePropertiesFromEnvFormat(properties);
             logger.info("路径getDefaultOfficeHome：{}",customizedConfigPath);
         } catch (Exception ignored) {
