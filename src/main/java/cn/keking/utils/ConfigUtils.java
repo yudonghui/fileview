@@ -21,16 +21,16 @@ public class ConfigUtils {
     public static String getHomePath() {
         String userDir = System.getenv("KKFILEVIEW_BIN_FOLDER");
         if (userDir == null) {
-             //userDir = getEnvOrDefault("user_dir", System.getProperty("user.dir"));
-             userDir = System.getProperty("user.dir");
+            //userDir = getEnvOrDefault("user_dir", System.getProperty("user.dir"));
+            userDir = System.getProperty("user.dir");
         }
         logger.info("路径userDir：{}", userDir, userDir);
         if (userDir.endsWith("bin")) {
             userDir = userDir.substring(0, userDir.length() - 4);
         } else {
             String separator = File.separator;
-            userDir = userDir + separator + "src" + separator +  "main";//本地运行
-            //userDir = userDir + separator + "main";//zeabur 服务器
+            //userDir = userDir + separator + "src" + separator +  "main";//本地运行
+            userDir = userDir + separator + "main";//zeabur 服务器
             logger.info("路径userDir：{}", userDir, userDir);
           /*  if (userDir.endsWith(MAIN_DIRECTORY_NAME)) {
                 userDir = userDir + separator + "src" + separator +  "main";
@@ -91,6 +91,7 @@ public class ConfigUtils {
         String separator = java.io.File.separator;
         return homePath + separator + "resources";
     }
+
     public synchronized static void restorePropertiesFromEnvFormat(Properties properties) {
         Iterator<Map.Entry<Object, Object>> iterator = properties.entrySet().iterator();
         while (iterator.hasNext()) {
