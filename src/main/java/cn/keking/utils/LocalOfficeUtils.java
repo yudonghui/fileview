@@ -88,8 +88,9 @@ public class LocalOfficeUtils {
             // Linux or other *nix variants
             String userDir = ConfigUtils.getResourcePath();
             String path = LocalOfficeUtils.class.getClassLoader().getResource("libreoffice").getPath();
-            logger.info("路径userDir-windows：{} {}", "Linux",path);
+            logger.info("路径userDir-linux：{}", path);
             return findOfficeHome(EXECUTABLE_DEFAULT,
+                    path,
                     "/src/target/classes/libreoffice",
                     "/opt/libreoffice6.0",
                     "/opt/libreoffice6.1",
