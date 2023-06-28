@@ -29,8 +29,8 @@ public class ConfigUtils {
             userDir = userDir.substring(0, userDir.length() - 4);
         } else {
             String separator = File.separator;
-            //userDir = userDir + separator + "src" + separator +  "main";//本地运行
-            userDir = userDir + separator + "main";//zeabur 服务器
+            userDir = userDir + separator + "src" + separator +  "main";//本地运行
+            //userDir = userDir + separator + "main";//zeabur 服务器
             logger.info("路径userDir：{}", userDir, userDir);
           /*  if (userDir.endsWith(MAIN_DIRECTORY_NAME)) {
                 userDir = userDir + separator + "src" + separator +  "main";

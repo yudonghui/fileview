@@ -87,9 +87,10 @@ public class LocalOfficeUtils {
         } else {
             // Linux or other *nix variants
             String userDir = ConfigUtils.getResourcePath();
-            logger.info("路径userDir-windows：{}", "Linux");
+            String path = LocalOfficeUtils.class.getClassLoader().getResource("libreoffice").getPath();
+            logger.info("路径userDir-windows：{} {}", "Linux",path);
             return findOfficeHome(EXECUTABLE_DEFAULT,
-                    userDir + File.separator + "libreoffice",
+                    path,
                     "/opt/libreoffice6.0",
                     "/opt/libreoffice6.1",
                     "/opt/libreoffice6.2",
@@ -134,8 +135,9 @@ public class LocalOfficeUtils {
                 .filter(new Predicate<String>() {
                     @Override
                     public boolean test(String homePath) {
-                        logger.info("路径筛选：{}", homePath);
-                        return Files.isRegularFile(Paths.get(homePath, executablePath));
+                        boolean regularFile = Files.isRegularFile(Paths.get(homePath, executablePath));
+                        logger.info("路径筛选：{} {}", homePath,regularFile);
+                        return regularFile;
                     }
                 })
                 // .filter(homePath -> Files.isRegularFile(Paths.get(homePath, executablePath)))
